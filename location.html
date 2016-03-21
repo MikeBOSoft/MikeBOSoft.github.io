@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">@import "styles.css";</style>
+
+<script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+  function initialize() {
+    var position = new google.maps.LatLng(51.436270, -2.759872);
+    var myOptions = {
+      zoom: 14,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"<strong>Nailsea Computer Club</strong><br>@ Southfield Church<br>on Fridays at 19:00!"
+    });  
+ 
+    var contentString = '<strong>Nailsea Computer Club</strong><br>@ Southfield Church<br>on Fridays at 19:00!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+</head>
+<body onload="initialize()">
+<a class="title" href="index.html" style = "text-decoration: none" ><h1>Nailsea Computer Club</h1></a>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="articles.html">Helpful Articles</a></li>  
+  <li><a href="links.html">Useful Links</a></li>  
+  <li><a class="active" href="location.html">Club Meeting Place</a></li>
+  <li><a href="about.html">About Us</a></li>
+</ul>
+
+
+	<h2>meets at:<p>Southfield Church<br>85 Southfield Close, Nailsea,<br>Bristol, <b>BS48 1SB</b></h2>
+  	<div id="map_canvas" style="width:680px; height:680px"></div>
+</body>
+</html>

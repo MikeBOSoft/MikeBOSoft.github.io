@@ -1,0 +1,110 @@
+div#map_canvas 
+{ 
+  margin: 0 auto 0 auto; 
+  border-style: double; 
+}
+
+h1 {
+    color: #303C74;
+    text-align: center;
+    font-size: 60px;
+    font-family: arial, sans-serif;
+}
+
+h1.title {
+    color: #303C74;
+    text-align: center;
+    font-size: 64px;
+    font-family: arial, sans-serif;
+    text-decoration: none!important;
+}
+
+h2 {
+    color: #754E91;
+    text-align: center;
+    font-size: 40px;
+    font-family: arial, sans-serif;
+}
+
+h3.contact {
+    color: #EOD5E9;
+    text-align: left;
+    font-size: 26px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+    margin-left: 12%; 
+    margin-right: 12%;
+}
+
+h3 {
+    color: #EOD5E9;
+    text-align: left;
+    font-size: 26px;
+    font-family: arial, sans-serif;
+}
+
+
+body {
+    background-color: #A3538B;
+    color: #EED9E8;
+    font-family: arial, sans-serif;
+}
+
+table.center {
+    width:80%; 
+    margin-left:10%; 
+    margin-right:10%;
+    border-collapse: collapse; 
+}
+
+td, tr, img  { 
+	padding: 0px; margin: 0px; border: none; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303C74;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+a:hover:not(.active) {
+    background-color: #BDA6CD;
+}
+
+.active {
+background-color:#5F5695;
+}
+
+table.links, th.links, td.links {
+   border: 2px solid black;
+   padding: 5px;
+   margin:0px;
+   margin-left:16%; 
+   margin-right:22%;
+} 
+
+div#map_canvas { 
+  margin: 0 auto 0 auto; 
+  border-style: double; 
+}
+
+p {
+    margin-right: 150px;
+    margin-left: 120px;
+}
